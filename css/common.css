@@ -84,6 +84,14 @@ header{
     justify-content: space-around;
 }
 
-.hobbies-cont{
-    padding-right: 40px;
+
+.hobbies-cont-btn{
+    width: 40%;
+    text-align: center;
+}
+
+.hobbies-hover{
+    background: #baf7df;
+    color: #cb4169;
+    padding: 20px;
 }
