@@ -17,3 +17,9 @@ hobbyBtn.addEventListener( "click", () => {
     },
     { once: true }
   );
+
+
+// P COUNT
+
+const countdBtn = document.getElementsByTagName("p");
+console.log(countdBtn);
