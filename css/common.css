@@ -1,0 +1,89 @@
+/* ---BASE--- */
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+}
+
+body{
+    background: #f6faf9;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 20px; 
+    color: #fff; 
+    line-height: 30px;
+}
+
+a{
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.btn{
+    background: #ca8397;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 2px #ca8397 solid;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #cb4169;
+    border: 2px #cb4169 solid;
+}
+
+.darkMode {
+    background-color: #103331;
+  }
+
+
+/* ---HEADER--- */
+
+header{
+    background: #c8e8df;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    align-items: center;
+}
+
+
+
+
+/* ---SKILLS--- */
+
+.main-cont{
+    background: #8fb8b8;
+    margin: 50px 70px;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+/* ---HOBBIES--- */
+
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hobbies-cont{
+    padding-right: 40px;
+}
