@@ -27,3 +27,28 @@ document.addEventListener ("click", () => {
 },
 { once: true }
 );
+
+
+//BAR PROGRESS
+
+let initial = 0;
+const barBtn = document.querySelector(".btn-bar");
+
+barBtn.addEventListener( "click", () => {
+    if (initial == 0) {
+        initial = 1;
+        let elem = document.getElementById("myBar");
+        let width = 1;
+        let id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            initial = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+          }
+        }
+      }
+     }
+  );
