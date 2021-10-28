@@ -52,3 +52,48 @@ barBtn.addEventListener( "click", () => {
       }
      }
   );
+
+//IMG FADE IN/FADE OUT
+
+const btnImg = document.querySelector(".btn-img");
+const showImg = document.querySelector(".cont-img");
+
+btnImg.addEventListener("click", () => {
+  showImg.classList.toggle("show-img");
+}
+);
+
+
+// COLOR CIRCLE
+
+const color1 = document.querySelector(".blu");
+const color2 = document.querySelector(".green");
+const color3 = document.querySelector(".violet");
+const color4 = document.querySelector(".red");
+const color5 = document.querySelector(".brown");
+
+const colorCircle = [];
+
+colorCircle.push(color1, color2, color3, color4, color5);
+
+const circle = document.querySelector(".circle");
+const btnCircle =document.querySelector(".btn-circle");
+
+
+
+// setInterval ( colorChange() => {
+//   for (i = 0; i>colorCircle.length; i++) {
+//     circle.classList.toggle = (colorCircle[i]);
+//   }
+// }, 5000
+//   return colorChange;
+// )
+let i;
+const colorChange = ( () => {
+  for (i = 0; i>colorCircle.length; i++) {
+    circle.classList.toggle = (colorCircle[i]);
+  }
+  console.log("tuttobene");
+})
+
+setInterval( colorChange, 5000);
