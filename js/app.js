@@ -77,13 +77,37 @@ const colorCircle = [];
 colorCircle.push(color1, color2, color3, color4, color5);
 
 const circle = document.querySelector(".circle");
-const btnCircle =document.querySelector(".btn-circle");
 
 let index = 0;
-
 const colorChange = ( () => {
   circle.style.background = colorCircle[index];
   index = (index + 1) % colorCircle.length;
 })
 
-setInterval( colorChange, 5000);
+setInterval(colorChange, 1000);
+
+startColor = document.addEventListener ('load', colorChange);
+
+document.body.addEventListener ("keypress", (event) => {
+  if (event.key === "Enter") {
+    document.removeEventListener("load", colorChange);
+  }
+})
+
+
+// SUM 
+
+const startSum = document.querySelector(".btn-number");
+
+startSum.addEventListener ("click", () => {
+  let userNum = prompt("Inserisci i numeri che vuoi sommare");
+  let inputNum = parseInt(userNum.split(" "));
+  const dati = [];
+
+  dati.push(inputNum);
+
+  const sum = (num1, num2) => num1 + num2; 
+
+  sum(dati);
+}
+);
